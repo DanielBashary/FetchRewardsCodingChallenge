@@ -1,4 +1,4 @@
-# FetchRewardsCodingChallenge <img src="images/FetchRewards.PNG" width="75" height="75"/>
+# FetchRewardsCodingChallenge <img align="right" width="100" height="100" src="images/FetchRewards.PNG">
 
 ## About:
 
