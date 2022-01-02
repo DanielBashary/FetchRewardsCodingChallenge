@@ -2,7 +2,7 @@
 
 ## About:
 
-A simple Spring Web Server as part of the Fetch Rewards Assesment
+A simple Spring Web Server as part of the Fetch Rewards Assessment.
 
 ## Dependencies:
 
