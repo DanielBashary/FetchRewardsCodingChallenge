@@ -24,7 +24,7 @@ The server is running at http://localhost:8080/.
 
 /spend_points is a DELETE Method which takes in a JSON Integer to deduct the points from the User Account
 
-## Testin:
+## Testing:
 In src/test/java/Tests there is a PayerControllerTest Class.  Run this class in order to test if all of the Rest API Endpoints are working properly and doing what they are
 supposed to be doing.
 
