@@ -10,6 +10,12 @@ To run this project export the project into any IDE as a maven project.  Start t
 
 ## Running the project:
 
+From IDE IntelliJ in github go to the code tab on the repository and copy the https link.
+Then you go to File -> New -> Project From Version Control -> and paste in that URL and the project will run on Intellij.
+Then you go to FetchRewardsCodingChallengeApplication and press run.
+In order to unit test make sure FetchRewardsCodingChallengeApplication is running and then run the PayerControllerTest in order to check all tests are running.
+You can also download the Github Project and open it up in your local IDE.
+
 To run the project run the FetchRewardsCodingChallengeApplication Class which is in src/main/java/com.interview.fetchrewardscodingchallenge.  
 Once you see this line:
 2022-01-02 14:43:15.249  INFO 12576 --- [-192.168.43.159] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms you are ready to start.
@@ -25,8 +31,10 @@ The server is running at http://localhost:8080/.
 /spend_points is a DELETE Method which takes in a JSON Integer to deduct the points from the User Account
 
 ## Testing:
-In src/test/java/Tests there is a PayerControllerTest Class.  Run this class in order to test if all of the Rest API Endpoints are working properly and doing what they are
+In src/test/java/Tests there is a PayerControllerTest Class.  
+Run this class in order to test if all of the Rest API Endpoints are working properly and doing what they are
 supposed to be doing.
+Make sure that FetchRewardsCodingChallengeApplication Class which is in src/main/java/com.interview.fetchrewardscodingchallenge is running when you are running the Unit Tests.
 
 ## Sending Responses:
 The simplest method to view the API endpoints is using the API client Postman.  Below are some pictures of what to enter into postman and the responses given.
