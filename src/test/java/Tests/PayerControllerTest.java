@@ -1,8 +1,9 @@
 package Tests;
 
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import org.junit.jupiter.api.Test;
-import com.mashape.unirest.http.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PayerControllerTest {

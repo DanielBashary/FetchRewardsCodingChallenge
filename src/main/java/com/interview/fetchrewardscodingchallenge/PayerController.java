@@ -8,8 +8,8 @@ public class PayerController {
     int pointsTotal;
     ArrayList<Payer> listOfPayers = new ArrayList<>();
 
-    @PostMapping("/add_transaction")
-    public String addTransaction(@RequestBody Payer payer){
+    @PostMapping("/add_transaction") //maps to the localhost:8080/add_transaction
+    public String addTransaction(@RequestBody Payer payer){ //takes in a JSON Object of class player
         boolean listContains = false; //checker to see if list contains the specific payer object
         for (Payer listOfPayer : listOfPayers) { //iterate through payer objects
             if (listOfPayer.getPayerName().equals(payer.getPayerName())) { //if the payer already exists
@@ -32,7 +32,7 @@ public class PayerController {
         return "Added Succesfully";
     }
 
-    @DeleteMapping("/spend_points")
+    @DeleteMapping("/spend_points") //maps to the localhost:8080/spend_points
     public List<String> spendPoints(@RequestBody int points) throws Exception {
         ArrayList<String> returnList = new ArrayList<>();
         if (points <= 0) { //if spending points are negative throw exception
@@ -56,11 +56,11 @@ public class PayerController {
         return returnList;
     }
 
-    @GetMapping("/get_balance")
+    @GetMapping("/get_balance") //maps to the localhost:8080/get_balance
     public HashMap<String, Integer> getBalance(){ //method to return the Payer's points and the payer name in Payer/Points format
         List<Payer> tempPayerList = new ArrayList<>(listOfPayers);
         HashMap<String, Integer> returnMap = new HashMap<>();
-        for (Payer value : tempPayerList) {
+        for (Payer value : tempPayerList) { //for loop in order to return each Payer alone so that players don't repeat in list.
             if (returnMap.containsKey(value.getPayerName())) {
                 int newValue = returnMap.get(value.getPayerName());
                 returnMap.replace(value.getPayerName(), newValue + value.getPoints());
