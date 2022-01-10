@@ -6,21 +6,22 @@ A simple Spring Web Server as part of the Fetch Rewards Assessment.
 
 ## Dependencies:
 
-To run this project export the project into any IDE as a maven project.  Start the application in the IDE as a Spring Boot Application.
+To run this project export the project into any IDE as a maven project.  
+Start the application in the IDE as a Spring Boot Application.
 
 ## Running the project:
 
 From IDE IntelliJ in github go to the code tab on the repository and copy the https link.
 Then you go to File -> New -> Project From Version Control -> and paste in that URL and the project will run on Intellij.
-Then you go to FetchRewardsCodingChallengeApplication and press run.
-In order to unit test make sure FetchRewardsCodingChallengeApplication is running and then run the PayerControllerTest in order to check all tests are running.
 You can also download the Github Project and open it up in your local IDE.
 
-To run the project run the FetchRewardsCodingChallengeApplication Class which is in src/main/java/com.interview.fetchrewardscodingchallenge.  
-Once you see this line:
+In order to run the project run the FetchRewardsCodingChallengeApplication Class which is in src/main/java/com.interview.fetchrewardscodingchallenge.  
+Once you see this line the project is running:
 2022-01-02 14:43:15.249  INFO 12576 --- [-192.168.43.159] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms you are ready to start.
 
 The server is running at http://localhost:8080/.
+
+In order to unit test make sure FetchRewardsCodingChallengeApplication is running and then run the PayerControllerTest in order to check all tests are running.
 
 ## REST API Endpoints:
 
